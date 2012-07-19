@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "guard-rubykoans/version"
+require "guard/rubykoans/version"
 
 Gem::Specification.new do |s|
   s.name        = "guard-rubykoans"
-  s.version     = Guard::Rubykoans::VERSION
+  s.version     = Guard::RubykoansVersion::VERSION
   s.authors     = ["lewy"]
   s.email       = ["lewy313@gmail.com"]
   s.homepage    = ""
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  s.add_dependency "guard"
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
 end
